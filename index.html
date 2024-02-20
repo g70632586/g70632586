@@ -119,6 +119,18 @@
         padding-top: 20px;
         padding-bottom: 10px;
     }
+    body {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    }
+    input, textarea {
+	-moz-user-select: auto;
+	-webkit-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+}
     </style>
 </head>
 
@@ -138,7 +150,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail2" class="form-label mb-0" style="font-weight: bold; font-size: 18px;">전화번호</label>
-                            <input type="text" class="form-control border-0" id="전화번호" name="전화번호" maxlength="13">
+                            <input type="text" class="form-control border-0" id="전화번호" name="전화번호" oninput="oninputPhone(this)" maxlength="13">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail2" class="form-label mb-0" style="font-weight: bold; font-size: 18px; padding-bottom: 5px;">신청 종목</label>
