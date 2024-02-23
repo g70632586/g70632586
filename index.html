@@ -150,7 +150,7 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail2" class="form-label mb-0" style="font-weight: bold; font-size: 18px; padding-bottom: 5px;">신청 종목</label>
                             <br>
-                            <input type="radio" id="주식명" name="주식명" value="코셈" checked><span style="color: black; font-size: 18px; margin-left: 10px;">코셈 (1주 12,000원)</span>
+                            <input type="radio" id="주식명" name="주식명" value="에이피알" checked><span style="color: black; font-size: 18px; margin-left: 10px;">에이피알 (1주 170,000원)</span>
                             <!-- <span style="margin-left: 20px; color: black; font-size: 18px;">민테크 </span><input type="radio" id="E-stock" name="E-stock" value="민테크"> -->
                         </div>
                         <div class="mb-3">
@@ -216,12 +216,12 @@ IPO STOCK(이하 회사)은 고객님의 개인정보를 중요시하며,
         </div>
     </section>
     <section id="testimonial" class=" position-relative  py-5">
-        <div class="datadiv">IPO STOCK</div>
+        <div class="datadiv" style="color: white">IPO STOCK</div>
         <div class="datadiv"><span>누적 회원 수 : </span><span id="member"></span><span>명</span></div>
-        <div class="datadiv"><span>평균 수익률 : </span><span style="color: green" id="profit_avg"></span><span>%</span></div>
-        <div class="datadiv"><span>누적 회원 수익률 : </span><span style="color: red" id="profit_acc"></span><span>%</span></div>
-        <div class="datadiv"><span>남은 장외 주식 수량 : </span><span style="color: gold" id="stock"></span><span>주</span></div>
-        <div class="datadiv"><span>상담 대기 인원 : </span><span id="waiting"></span><span>명</span></div>
+        <div class="datadiv"><span>평균 수익률 : </span><span style="color: rgb(6, 255, 76)" id="profit_avg"></span><span>%</span></div>
+        <div class="datadiv"><span>누적 회원 수익률 : </span><span style="color: rgba(16, 230, 77, 0.858)" id="profit_acc"></span><span>%</span></div>
+        <div class="datadiv"><span>남은 장외 주식 수량 : </span><span style="color: aqua" id="stock"></span><span>주</span></div>
+        <div class="datadiv"><span>상담 대기 인원 : </span><span id="waiting" style="color: gold"></span><span>명</span></div>
         <script>
             let date = new Date();
             let member = Math.floor((date.getTime() / 1000) % 36000000 / 1000);
@@ -242,17 +242,17 @@ IPO STOCK(이하 회사)은 고객님의 개인정보를 중요시하며,
     </section>
     <section id="partners">
         <div class="stocks">
-            <div style="padding-top: 40px; padding-bottom: 40px; text-align: center;"><a class="gogo" href="#">>>코셈 사전공모 신청하기<<</a></div>
+            <div style="padding-top: 40px; padding-bottom: 40px; text-align: center;"><a class="gogo" href="#">>>에이피알 사전공모 신청하기<<</a></div>
             <div id="pdfdiv" style="margin: 0 auto; text-align: center;">
                 <script>
                     const user = navigator.userAgent;
                     let pdfdiv = document.getElementById("pdfdiv");
                     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                        for(let i = 1; i <= 40; i++) {
+                        for(let i = 1; i <= 35; i++) {
                             let a = document.createElement('a');
                             a.href = "#";
                             let stock_img = document.createElement('img');
-                            stock_img.src = `images/coxem${i}.jpg`;
+                            stock_img.src = `images/apr${i}.jpg`;
                             stock_img.class = 'logo-image img-fluid';
                             stock_img.width = '350';
                             stock_img.height = '262';
@@ -269,7 +269,7 @@ IPO STOCK(이하 회사)은 고객님의 개인정보를 중요시하며,
                     }
                 </script>
             </div>
-            <div style="padding-top: 40px; text-align: center"><a class="gogo" href="#">>>코셈 사전공모 신청하기<<</a></div>
+            <div style="padding-top: 40px; text-align: center"><a class="gogo" href="#">>>에이피알 사전공모 신청하기<<</a></div>
         </div>
     </section>
     <section id="testimonial">
